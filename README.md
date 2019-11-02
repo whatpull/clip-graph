@@ -4,7 +4,7 @@ JavaScript graph and bundle process
 
 1). 자산(Assets) 생성
 - 보유하고 있는 파일 자산 정보
-(Source code translate ES5 code : Babel)
+(Generate ES5 code : Babel)
 
 2). 그래프(Graph) 생성
 - 자산(Assets)의 연결 그래프(Graph) 정보
