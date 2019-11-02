@@ -6,6 +6,7 @@ const babel = require('@babel/core');
 
 let ID = 0;
 
+// 자산 생성
 function createAsset(filename) {
     const content = fs.readFileSync(filename, 'utf-8');
     // 바빌론 파일 컨텐츠 구조에 대한 정보 획득
@@ -36,6 +37,7 @@ function createAsset(filename) {
     }
 }
 
+// 그래프 생성
 function createGraph(entry) {
     const mainAsset = createAsset(entry);
     const queue = [mainAsset];
@@ -54,6 +56,7 @@ function createGraph(entry) {
     return queue;
 }
 
+// 번들링 진행
 function bundle(graph) {
     let modules = '';
 
