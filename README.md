@@ -2,6 +2,9 @@
 JavaScript graph and bundle process
 자바스크립트 번들러 셋업 및 과정 이해
 
+위치 : clip-graph 프로젝트<br>
+실행 : node index.js<br>
+
 1). 자산(Assets) 생성
 - 보유하고 있는 파일 자산 정보
 (Generate ES5 code : Babel)
