@@ -2,6 +2,7 @@ const chalk = require('chalk');
 const figlet = require('figlet');
 const inquirer = require('inquirer');
 const shelljs = require('shelljs');
+const clip = require('./clip.js');
 
 // 초기화
 const init = () => {
@@ -18,17 +19,35 @@ const init = () => {
 
 const asking = () => {
     // 질문 준비 및 셋업
-    inquirer.prompt([
+    var quest = [
+        {
+            type: 'input',
+            name: 'entry',
+            message: '엔트리 파일 경로를 정확하게 입력해주세요.'
+        }
+    ];
 
-    ]).then(answers => {
-
+    inquirer.prompt(quest).then(answers => {
+        const entry = answers.entry;
+        if(shelljs.test('-f', entry)) {
+            if(shelljs.which('node')) {
+                const node = clip.graph(entry);
+                console.log(node);
+            } else {
+                console.log("노드 명령어를 사용할 수 없습니다.");
+            }
+        } else {
+            console.log("엔트리 파일이 존재하지 않습니다.");
+        }
     });
 }
 
-// run
+// 실행
 const run = async () => {
-    // 초기화 피그렛 생성
+    // 초기화
     init();
+    // 답변
+    asking();
 }
 
 run();
