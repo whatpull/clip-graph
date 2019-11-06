@@ -32,6 +32,7 @@ const asking = () => {
         if(shelljs.test('-f', entry)) {
             if(shelljs.which('node')) {
                 const node = clip.graph(entry);
+                // TODO. 데이터 파싱 후 노드를 표현하는 그래픽 파일 생성
                 console.log(node);
             } else {
                 console.log("노드 명령어를 사용할 수 없습니다.");
