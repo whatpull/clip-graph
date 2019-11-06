@@ -1,6 +1,13 @@
 # clip-graph
-JavaScript graph and bundle process
-자바스크립트 번들러 셋업 및 과정 이해
+<pre>
+   ____ _     ___ ____     ____ ____      _    ____  _   _ 
+  / ___| |   |_ _|  _ \   / ___|  _ \    / \  |  _ \| | | |
+ | |   | |    | || |_) | | |  _| |_) |  / _ \ | |_) | |_| |
+ | |___| |___ | ||  __/  | |_| |  _ <  / ___ \|  __/|  _  |
+  \____|_____|___|_|      \____|_| \_\/_/   \_\_|   |_| |_|
+                                                           
+Package graph manager. Copyright ⓒ 2019. CLIPBOUND All Rights Reserved.
+</pre>
 
 위치 : clip-graph 프로젝트<br>
 실행 : node index.js<br>
