@@ -2,7 +2,7 @@ const url = require('url');
 const fs = require('fs');
 
 // [시스템 변수]
-const DEFAULT_ROOT = "./pages";
+const DEFAULT_ROOT = "./resource";
 
 /**
  * [라우터] 파일 바인딩

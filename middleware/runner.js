@@ -2,7 +2,7 @@ const chalk = require('chalk');
 const figlet = require('figlet');
 const inquirer = require('inquirer');
 const shelljs = require('shelljs');
-const compile = require('./compile.js');
+const compiler = require('./compiler.js');
 
 // 초기화
 const init = () => {
@@ -31,7 +31,7 @@ const asking = () => {
         const entry = answers.entry;
         if(shelljs.test('-f', entry)) {
             if(shelljs.which('node')) {
-                const node = compile.graph(entry);
+                const node = compiler.graph(entry);
                 // step1. 획득 데이터 정리
                 // step2. 데이터 기반 graph 생성 미들웨어 개발(자바스크립트, 캔버스)
                 // step3. 웹팩을 통한 index 설정

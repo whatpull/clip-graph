@@ -1,12 +1,12 @@
 const http = require("http");
 const fs = require("fs");
 const url = require("url");
-const route = require("./router");
+const router = require("./router");
 
 // [기본] 서버 생성
 const server = http.createServer((request, response) => {
     // [라우터] 커스텀, TODO 정적파일에 대한 처리, 자동화 진행여부
-    route(request, response, () => {
+    router(request, response, () => {
         
     }, () => {
         
