@@ -9,8 +9,8 @@
 Package graph manager. Copyright ⓒ 2019. CLIPBOUND All Rights Reserved.
 </pre>
 
-위치 : clip-graph 프로젝트<br>
-실행 : node index.js<br>
+위치 : cd 위치/clip-graph<br>
+실행 : npm start<br>
 
 1). 자산(Assets) 생성
 - 보유하고 있는 파일 자산 정보
