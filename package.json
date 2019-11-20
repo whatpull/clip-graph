@@ -2,10 +2,10 @@
   "name": "clip-graph",
   "version": "1.0.0",
   "description": "JavaScript structure graph",
-  "main": "index.js",
+  "main": "/middleware/runner.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node ./middleware/runner.js"
   },
   "author": "clipbound",
   "license": "ISC",
